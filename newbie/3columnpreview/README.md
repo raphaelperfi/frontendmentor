@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site URL: [Live at Github](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://github.com/raphaelperfi/frontendmentor/tree/main/newbie/3columnpreview)
+- Live Site URL: [Live at Github](https://raphaelperfi.github.io/frontendmentor/newbie/3columnpreview)
 
 ## My process
 
