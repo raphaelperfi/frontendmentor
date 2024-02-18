@@ -1,0 +1,147 @@
+:root {
+  --color-sedans: hsl(31, 77%, 52%);
+  --color-suvs: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+
+  --color-white: hsla(0, 0%, 100%, 0.75);
+  --color-gray: hsl(0, 0%, 95%);
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  padding: 0 24px;
+}
+
+.section-cars {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 920px;
+  margin: 171px 0;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.category {
+  max-width: 307px;
+  padding: 48px;
+}
+
+.category--sedans {
+  background-color: var(--color-sedans);
+}
+.category--suvs {
+  background-color: var(--color-suvs);
+}
+.category--luxury {
+  background-color: var(--color-luxury);
+}
+
+.category__icon {
+  margin-bottom: 35px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: var(--ff-secondary);
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 15px;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  line-height: 1.67;
+  text-align: left;
+  vertical-align: top;
+  color: var(--color-white);
+  margin-bottom: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 14px 29px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--color-gray);
+}
+
+.btn:hover,
+.btn:active {
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 2px var(--color-gray);
+}
+
+.btn--sedans:link,
+.btn--sedans:visited {
+  color: var(--color-sedans);
+}
+
+.btn--sedans:hover,
+.btn--sedans:active {
+  background-color: var(--color-sedans);
+  color: var(--color-gray);
+}
+
+.btn--suvs:link,
+.btn--suvs:visited {
+  color: var(--color-suvs);
+}
+
+.btn--suvs:hover,
+.btn--suvs:active {
+  background-color: var(--color-suvs);
+  color: var(--color-gray);
+}
+
+.btn--luxury:link,
+.btn--luxury:visited {
+  color: var(--color-luxury);
+}
+
+.btn--luxury:hover,
+.btn--luxury:active {
+  background-color: var(--color-luxury);
+  color: var(--color-gray);
+}
+
+@media (max-width: 52em) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 88px 0;
+    border-radius: 0px;
+  }
+
+  .category:first-child {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  .category:last-child {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
